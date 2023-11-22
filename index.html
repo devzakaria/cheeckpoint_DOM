@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="addToCard.css" />
+    <script type="text/javascript" src="addToCart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="item1">
+      <img src="/assets/heels.jpg" alt="" />
+        <div class="title">Red Heels</div>
+        <label> SIZE:</label>
+        <select>
+          <option>30</option>
+          <option>32</option>
+          <option>34</option>
+          <option>36</option>
+        </select>
+      </div>
+      <button onclick="addToCart(item1)">add to card</button>
+      <div class="card" id="item2">
+        <img src="assets/white.heels.jpg" alt="" />
+        <div class="title">white heels</div>
+        <div>
+        <label> SIZE:</label>
+        <select>
+          <option>30</option>
+          <option>32</option>
+          <option>34</option>
+          <option>36</option>
+        </select>
+      </div>
+      <button onclick="addToCart(item2)">add to card</button>
+    </div>
+  </div>
+    <div class="cart" id="cart">
+      <div class="title">CART</div>
+      <hr />
+      <div id="title"></div>
+    </div>
+  </body>
+</html>
